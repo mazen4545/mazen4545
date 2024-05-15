@@ -3,76 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Webpage</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #007bff;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-        }
-        p {
-            line-height: 1.6;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>Shein Shop</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>Welcome to Shein Shop</h1>
+    </header>
 
-<header>
-    <h1>Welcome to your Personal Webpage, {{name}}!</h1>
-</header>
+    <section class="products">
+        <h2>Featured Products</h2>
+        <!-- Add your products here -->
+        <div class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Description of Product 1</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Description of Product 2</p>
+            <button>Add to Cart</button>
+        </div>
+        <!-- Add more products as needed -->
+    </section>
 
-<div class="container">
-    <h2>About Me</h2>
-    <p>
-        Hello there! I'm {{name}}. Welcome to my personal webpage. Here, you'll find information about me, my interests, and more.
-    </p>
+    <section class="tamara">
+        <h2>Shop with Tamara</h2>
+        <p>Pay for your purchases with Tamara, the easy way to shop now and pay later.</p>
+        <!-- Add Tamara logo or description -->
+        <img src="tamara_logo.png" alt="Tamara Logo">
+    </section>
 
-    <h2>Interests</h2>
-    <p>
-        I am passionate about various things, including {{interests}}.
-    </p>
+    <section class="paypal">
+        <h2>Checkout with PayPal</h2>
+        <p>Pay securely with PayPal. Fast checkout, secure payments.</p>
+        <!-- Add PayPal checkout button or logo -->
+        <img src="paypal_logo.png" alt="PayPal Logo">
+    </section>
 
-    <h2>Contact Me</h2>
-    <p>
-        Feel free to get in touch with me via email at: example@example.com
-    </p>
-</div>
-
-<footer>
-    <p>&copy; 2024 Your Name. All rights reserved.</p>
-</footer>
-
+    <footer>
+        <p>&copy; 2024 Shein Shop. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
+header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
 
-<!---
-mazen4545/mazen4545 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+.products {
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.tamara, .paypal {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
 
